@@ -12,14 +12,16 @@
 <script>
 
 export default {
-  name: 'Hel',
+  name: 'WouldYouRatherQuestion',
   props: {
-    msg: String
+    question: String,
+    answer1:String,
+    answer2:String
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style
+<style>
 
 </style>
