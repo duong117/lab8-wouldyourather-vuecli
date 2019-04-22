@@ -3,9 +3,11 @@
     <h1>Would you rather...</h1>
     <WouldYouRatherQuestion
             v-for="question in questions"
-            v-bind:key="question.question"
-            v-bind:question="question"
-            v-on:answer-changed="answerChanged">>
+            v-bind:key="question.id"
+            v-bind:question="question.question"
+            v-bind:answer1="question.answer1"
+            v-bind:answer2="question.answer2"
+            v-on:answer-changed="answerChanged">
     </WouldYouRatherQuestion>
 
 
